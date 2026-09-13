@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Interventiegebied | PLOMB EXPERT België 24/7</title>
-  <meta name="description" content="Snelle depannage door onze technici in Brussel (19 gemeenten), Waals-Brabant, Vlaams-Brabant en heel België in minder dan 30 minuten." />
+  <title>Installatie & Herstelling Wasmachine | PLOMB EXPERT België 24/7</title>
+  <meta name="description" content="Aansluiting van watertoevoer, afvoer, lekdetectie en herstelling van wasmachines in Brussel en heel België." />
   
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -87,15 +87,16 @@
           <a class="hover:text-primary transition-colors" data-i18n="nav.heating" href="chauffage.html">Verwarming</a>
           <a class="hover:text-primary transition-colors" data-i18n="nav.cooling" href="climatisation.html">Airco</a>
           <a class="hover:text-primary transition-colors" data-i18n="nav.dishwasher" href="lave-vaisselle.html">Vaatwasser</a>
-          <a class="hover:text-primary transition-colors" data-i18n="nav.washing_machine" href="lave-linge.html">Wasmachine</a>
+          <a class="text-primary font-bold transition-colors" data-i18n="nav.washing_machine" href="lave-linge.html">Wasmachine</a>
           <a class="hover:text-primary transition-colors" data-i18n="nav.devis" href="devis.html">Gratis Offerte</a>
-          <a class="text-primary font-bold transition-colors" data-i18n="nav.coverage" href="zones.html">Interventiegebied</a>
+          <a class="hover:text-primary transition-colors" data-i18n="nav.coverage" href="zones.html">Interventiegebied</a>
           
           <a class="pulse-call bg-primary hover:bg-primary-hover text-white px-3.5 py-2 rounded-xl text-xs font-bold transition-all shadow-sm" href="tel:+32466423280">
             0466 42 32 80
           </a>
         </nav>
 
+        <!-- Mobile Hamburger Button -->
         <div class="lg:hidden flex items-center gap-2">
           <button aria-label="Menu Mobile" class="w-10 h-10 rounded-lg border border-slate-300 bg-slate-50 flex items-center justify-center text-slate-900 hover:bg-slate-100 active:scale-95 transition-all" id="mobile-menu-btn">
             <span class="material-symbols-outlined text-2xl font-bold" id="mobile-menu-icon">menu</span>
@@ -154,65 +155,57 @@
     </div>
   </header>
 
-  <!-- Page Hero Banner with Image Background Overlay -->
-  <section class="relative overflow-hidden min-h-[320px] sm:min-h-[380px] flex items-center p-6 sm:p-12 text-white" style="background-image: url('assets/images/blmber main pic.jpg'); background-size: cover; background-position: center;">
+  <!-- Page Hero Banner with Image Background Overlay using blmber main pic.jpg -->
+  <section class="relative overflow-hidden min-h-[360px] sm:min-h-[420px] flex items-center p-6 sm:p-12 text-white" style="background-image: url('assets/images/blmber main pic.jpg'); background-size: cover; background-position: center;">
     <div class="absolute inset-0 hero-bg-overlay-transparent"></div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 space-y-4">
-      <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/65 backdrop-blur-md border border-white/20 text-xs font-bold text-blue-200 shadow-sm" data-i18n="zones.badge">
-        Snelle Interventie
+    <div class="relative z-10 max-w-7xl mx-auto w-full space-y-4">
+      <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/65 backdrop-blur-md border border-white/20 text-xs font-bold text-blue-200 shadow-sm" data-i18n="washer.badge">
+        Wasmachine Depannage
       </span>
-      <h1 class="text-3xl sm:text-5xl font-headline font-black leading-tight drop-shadow-md" data-i18n="zones.title">Interventiegebieden in België</h1>
-      <p class="text-sm sm:text-base text-slate-100 max-w-2xl leading-relaxed drop-shadow-xs" data-i18n="zones.subtitle">Klik op een van de onderstaande gemeenten om uw interventieaanvraag direct vooraf in te vullen.</p>
+      <h1 class="text-3xl sm:text-5xl font-headline font-black leading-tight drop-shadow-md" data-i18n="washer.title">
+        Installatie & Herstelling Wasmachine
+      </h1>
+      <p class="text-sm sm:text-base text-slate-100 max-w-2xl leading-relaxed drop-shadow-xs" data-i18n="washer.subtitle">
+        Vakkundige aansluiting van watertoevoer, afvoerleidingen, lekdetectie en herstelling van wasmachines in heel België.
+      </p>
     </div>
   </section>
 
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 mt-10">
-    <div class="relative w-full max-w-md mx-auto">
-      <span class="material-symbols-outlined absolute left-3 top-3 text-slate-400 text-base">search</span>
-      <input class="w-full bg-white border border-slate-300 rounded-xl pl-10 pr-4 py-2.5 text-xs text-slate-800 focus:border-primary focus:ring-1 focus:ring-primary shadow-xs" data-i18n-ph="zones.search_ph" id="commune-search-input" placeholder="Zoek uw gemeente..." type="text"/>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 mt-10">
+    <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm space-y-6">
+      <div class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-headline font-black text-slate-900" data-i18n="washer.h2">Wasmachine Aansluiting & Storingsherstel</h2>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="washer.p">
+          Een defecte wasmachine of een gelekte afvoerslang kan waterschade veroorzaken. Wij zorgen voor een snelle vervanging van kraan- en afvoeraansluitingen, pompreiniging en veilige inbedrijfstelling.
+        </p>
+        <ul class="space-y-2 text-xs sm:text-sm font-semibold text-slate-800">
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <span data-i18n="washer.f1">Aansluiting watertoevoer, afvoer en kraanmontage</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <span data-i18n="washer.f2">Herstelling van lekkages, centrifugeproblemen & pompen</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <span data-i18n="washer.f3">Snelle installatie en veilige inbedrijfstelling</span></li>
+        </ul>
+        
+        <!-- Action Buttons -->
+        <div class="pt-3 flex flex-col sm:flex-row gap-3">
+          <a class="pulse-call bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-xl font-bold text-xs shadow-md flex flex-col items-center justify-center text-center leading-tight gap-0.5" href="tel:+32466423280">
+            <span data-i18n="washer.call_btn">Wasmachine Herstellen</span>
+            <span class="text-[11px] font-medium opacity-90">0466 42 32 80</span>
+          </a>
+          <a class="bg-[#25D366] hover:bg-[#20ba5a] text-white px-6 py-3 rounded-xl font-bold text-xs shadow-md flex items-center justify-center gap-2 text-center" href="https://wa.me/32466423280" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-base">chat</span>
+            <span data-i18n="hero.wa_btn">Direct WhatsApp</span>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-3 shadow-xs">
-        <h2 class="text-lg font-bold text-primary flex items-center gap-2"><span class="material-symbols-outlined">location_on</span> <span data-i18n="zones.brussels">Brussel (19 Gemeenten)</span></h2>
-        <div class="flex flex-wrap gap-2">
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Bruxelles-Ville</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Ixelles / Elsene</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Uccle / Ukkel</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Schaerbeek / Schaarbeek</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Anderlecht</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Etterbeek</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Woluwe</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Forest / Vorst</span>
-        </div>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-3 shadow-xs">
-        <h2 class="text-lg font-bold text-primary flex items-center gap-2"><span class="material-symbols-outlined">map</span> <span data-i18n="zones.wallon">Waals-Brabant & Wallonië</span></h2>
-        <div class="flex flex-wrap gap-2">
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Waterloo</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Braine-l'Alleud</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Wavre / Waver</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Nivelles / Nijvel</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Ottignies-LLN</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Liège</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Namur</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Charleroi</span>
-        </div>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-3 shadow-xs">
-        <h2 class="text-lg font-bold text-primary flex items-center gap-2"><span class="material-symbols-outlined">explore</span> <span data-i18n="zones.vlaanderen">Vlaams-Brabant & Vlaanderen</span></h2>
-        <div class="flex flex-wrap gap-2">
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Vilvoorde</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Zaventem</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Leuven</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Halle</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Antwerpen</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Mechelen</span>
-          <span class="commune-tag px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-800 hover:bg-primary hover:text-white transition-all">Gent</span>
-        </div>
-      </div>
+    <!-- Quote Form Callout -->
+    <div class="bg-slate-100 rounded-3xl p-6 sm:p-8 border border-slate-200 text-center max-w-xl mx-auto space-y-3">
+      <h3 class="text-xl font-headline font-bold text-slate-900" data-i18n="washer.cta_title">Wasmachine Hulp Nodig?</h3>
+      <p class="text-xs text-slate-600" data-i18n="washer.cta_desc">Vraag vrijblijvend een snelle interventie aan voor uw wasmachine.</p>
+      <a class="w-full bg-primary hover:bg-primary-hover text-white text-center py-3.5 rounded-xl font-bold text-xs flex items-center justify-center gap-2" href="devis.html">
+        <span class="material-symbols-outlined">send</span>
+        <span data-i18n="washer.cta_btn">Offerte Wasmachine</span>
+      </a>
     </div>
   </main>
 
