@@ -956,7 +956,22 @@ function initQuoteForm() {
       const details = document.getElementById('details')?.value || 'Geen extra details';
       const isUrgent = document.getElementById('urgency-flag')?.checked;
 
-      // 1. Direct email dispatch to plombexpertbelgica@gmail.com via FormSubmit AJAX endpoint
+      // 1. Trigger Direct Email Dispatch in background with 5s timeout safeguard
+      const emailPayload = {
+        _subject: `🚨 PLOMB EXPERT Aanvraag: ${problem} (${location})`,
+        _template: 'table',
+        _captcha: 'false',
+        Client: name,
+        Service: problem,
+        Locatie: location,
+        Telefoon: fullPhone,
+        Urgentie: isUrgent ? 'OUI (PRIORITAIRE 24/7)' : 'Nee',
+        Details: details
+      };
+
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 5000);
+
       try {
         await fetch('https://formsubmit.co/ajax/plombexpertbelgica@gmail.com', {
           method: 'POST',
@@ -964,20 +979,13 @@ function initQuoteForm() {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
-          body: JSON.stringify({
-            _subject: `🚨 PLOMB EXPERT Aanvraag: ${problem} (${location})`,
-            _template: 'table',
-            _captcha: 'false',
-            Client: name,
-            Service: problem,
-            Locatie: location,
-            Telefoon: fullPhone,
-            Urgentie: isUrgent ? 'OUI (PRIORITAIRE 24/7)' : 'Nee',
-            Details: details
-          })
+          body: JSON.stringify(emailPayload),
+          signal: controller.signal
         });
       } catch (err) {
         console.warn('FormSubmit Direct Mail Notification:', err);
+      } finally {
+        clearTimeout(timeoutId);
       }
 
       if (submitBtn) {
@@ -988,7 +996,7 @@ function initQuoteForm() {
       form.reset();
       updatePhoneInputConstraints();
 
-      // 2. Premium Modern Glass Modal Confirmation Popup
+      // 2. Open Success Modal immediately
       showSuccessModal({
         name,
         fullPhone,
