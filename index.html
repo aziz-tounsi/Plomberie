@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html class="scroll-smooth overflow-x-hidden" lang="nl">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>PLOMB EXPERT | Dépannage Plomberie & Chauffage 24/7 Belgique</title>
+  <meta name="description" content="PLOMB EXPERT - Service premium de dépannage plomberie, entretien chaudière agréé, fuites d'eau et débouchage rapide 24h/24 et 7j/7 en Belgique." />
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#005baf",
+            "primary-dark": "#003875",
+            "primary-hover": "#004689",
+            "secondary": "#49607e",
+            "background": "#f8fafc",
+            "surface": "#ffffff"
+          },
+          fontFamily: {
+            body: ["Inter", "sans-serif"],
+            headline: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Glassmorphism & Controls Styles -->
+  <link href="assets/css/custom.css" rel="stylesheet"/>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-body antialiased selection:bg-primary selection:text-white pb-20 relative" id="top">
+
+  <!-- Side Attached Language Switcher -->
+  <aside aria-label="Taal / Langue" class="side-lang-switcher bg-white/95 backdrop-blur-md p-1 rounded-l-xl border border-r-0 border-slate-300 shadow-xl flex flex-col gap-1">
+    <button class="lang-btn px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-primary text-white" data-lang="nl">NL</button>
+    <button class="lang-btn px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-700 hover:bg-slate-100" data-lang="fr">FR</button>
+  </aside>
+
+  <!-- Header Container -->
+  <header class="sticky top-0 z-40 shadow-sm border-b border-slate-200">
+    
+    <!-- Top Dark Blue Bar -->
+    <div class="top-bar-dark py-1.5 px-4 text-xs font-medium border-b border-white/10">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        
+        <!-- Left Quick Info -->
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-1.5 text-blue-100">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span data-i18n="nav.status">Brussel & Belgique 24/7</span>
+          </span>
+          <span class="hidden sm:inline text-white/30">•</span>
+          <a class="hidden sm:inline-flex items-center gap-1 text-blue-100 hover:text-white transition-colors" href="mailto:plombexpertbelgica@gmail.com">
+            <span class="material-symbols-outlined text-xs">mail</span>
+            <span>plombexpertbelgica@gmail.com</span>
+          </a>
+        </div>
+
+        <!-- Right Social & Phone Strip -->
+        <div class="flex items-center gap-3">
+          <a aria-label="Facebook" class="text-white hover:text-blue-300 transition-colors" href="https://www.facebook.com/profile.php?id=61594108021201" rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a aria-label="WhatsApp" class="text-white hover:text-emerald-300 transition-colors" href="https://wa.me/32466423280" rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          </a>
+          <a aria-label="Téléphone" class="text-white hover:text-blue-200 font-bold transition-colors flex items-center gap-1" href="tel:+32466423280">
+            <span class="material-symbols-outlined text-sm">call</span>
+            <span class="hidden xs:inline">+32 466 42 32 80</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Main White Header Bar -->
+    <div class="bg-white py-3 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        
+        <!-- Logo -->
+        <a class="flex items-center gap-3 group" href="index.html">
+          <div class="relative flex items-center justify-center p-0.5 bg-white rounded-md border border-slate-200 shadow-xs group-hover:scale-102 transition-transform duration-200">
+            <img alt="PLOMB EXPERT Logo" class="h-10 sm:h-12 w-auto object-contain rounded-md" src="assets/images/logo.jpg"/>
+          </div>
+          <div>
+            <span class="text-xl sm:text-2xl font-headline font-black tracking-tight text-primary">PLOMB EXPERT</span>
+            <p class="text-[11px] sm:text-xs font-semibold text-slate-500 -mt-0.5" data-i18n="nav.slogan">Comfort & Expertise</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Bar -->
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
+          <a class="text-primary font-bold transition-colors" data-i18n="nav.home" href="index.html">Startpagina</a>
+          <a class="hover:text-primary transition-colors" data-i18n="nav.plumbing" href="plomberie.html">Loodgieterij & Lekken</a>
+          <a class="hover:text-primary transition-colors" data-i18n="nav.heating" href="chauffage.html">Verwarming & Ketels</a>
+          <a class="hover:text-primary transition-colors" data-i18n="nav.cooling" href="climatisation.html">Airco & Warmtepompen</a>
+          <a class="hover:text-primary transition-colors" data-i18n="nav.devis" href="devis.html">Gratis Offerte</a>
+          <a class="hover:text-primary transition-colors" data-i18n="nav.coverage" href="zones.html">Interventiegebied</a>
+          
+          <a class="pulse-call flex items-center gap-1.5 bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-sm active:scale-95 ml-2" href="tel:+32466423280">
+            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">call</span>
+            <span>0466 42 32 80</span>
+          </a>
+        </nav>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="lg:hidden flex items-center gap-2">
+          <button aria-label="Menu Mobile" class="w-10 h-10 rounded-lg border border-slate-300 bg-slate-50 flex items-center justify-center text-slate-900 hover:bg-slate-100 active:scale-95 transition-all" id="mobile-menu-btn">
+            <span class="material-symbols-outlined text-2xl font-bold" id="mobile-menu-icon">menu</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Functional Mobile Navigation Dropdown Drawer -->
+    <div class="hidden lg:hidden bg-white border-t border-slate-200 shadow-xl" id="mobile-menu">
+      <div class="flex flex-col divide-y divide-slate-100 text-sm font-bold text-slate-800">
+        <a class="px-5 py-3.5 hover:bg-slate-50 hover:text-primary transition-colors flex items-center justify-between" href="index.html">
+          <span data-i18n="nav.home">Startpagina</span>
+        </a>
+
+        <a class="px-5 py-3.5 hover:bg-slate-50 hover:text-primary transition-colors flex items-center justify-between" href="plomberie.html">
+          <span data-i18n="nav.plumbing">Loodgieterij & Lekken</span>
+          <span class="material-symbols-outlined text-slate-400 text-base">chevron_right</span>
+        </a>
+
+        <a class="px-5 py-3.5 hover:bg-slate-50 hover:text-primary transition-colors flex items-center justify-between" href="chauffage.html">
+          <span data-i18n="nav.heating">Verwarming & Ketels</span>
+          <span class="material-symbols-outlined text-slate-400 text-base">chevron_right</span>
+        </a>
+
+        <a class="px-5 py-3.5 hover:bg-slate-50 hover:text-primary transition-colors flex items-center justify-between" href="climatisation.html">
+          <span data-i18n="nav.cooling">Airco & Warmtepompen</span>
+          <span class="material-symbols-outlined text-slate-400 text-base">chevron_right</span>
+        </a>
+
+        <a class="px-5 py-3.5 hover:bg-slate-50 hover:text-primary transition-colors flex items-center justify-between" href="zones.html">
+          <span data-i18n="nav.coverage">Interventiegebied</span>
+          <span class="material-symbols-outlined text-slate-400 text-base">chevron_right</span>
+        </a>
+
+        <a class="px-5 py-3.5 hover:bg-slate-50 hover:text-primary transition-colors flex items-center justify-between" href="devis.html">
+          <span data-i18n="nav.devis">Gratis Offerte / Contact</span>
+          <span class="material-symbols-outlined text-slate-400 text-base">chevron_right</span>
+        </a>
+
+        <a class="px-5 py-4 bg-primary text-white hover:bg-primary-hover transition-colors flex items-center justify-between font-extrabold" href="tel:+32466423280">
+          <span data-i18n="nav.call_now">Nu bellen (+32 466 42 32 80)</span>
+          <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">call</span>
+        </a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Full-Width Hero Section -->
+  <section class="hero-fullwidth relative overflow-hidden min-h-[420px] sm:min-h-[480px] flex items-center p-6 sm:p-14 text-white" style="background-image: url('assets/images/blmber main pic.jpg'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 hero-bg-overlay-transparent"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto w-full space-y-6">
+      <div class="max-w-2xl space-y-5">
+        <div class="flex flex-wrap items-center gap-2.5">
+          <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/65 backdrop-blur-md border border-white/20 text-xs font-bold text-white shadow-sm">
+            <span class="inline-flex items-center overflow-hidden rounded-[2px] w-4 h-3 shadow-xs">
+              <span class="w-1/3 h-full bg-black"></span>
+              <span class="w-1/3 h-full bg-amber-400"></span>
+              <span class="w-1/3 h-full bg-red-600"></span>
+            </span>
+            <span data-i18n="hero.badge_flag">Interventie heel België</span>
+          </span>
+        </div>
+
+        <h1 class="font-headline text-3xl sm:text-6xl text-white tracking-tight leading-tight font-black drop-shadow-md" data-i18n="hero.title">
+          Loodgieterij & Verwarming 24/7
+        </h1>
+
+        <p class="text-base sm:text-xl text-slate-100 leading-relaxed font-medium drop-shadow-xs max-w-xl" data-i18n="hero.subtitle">
+          Snelle depannage voor lekken, ketelstoringen en ontstoppingen. Gecertificeerde loodgieters ter plaatse in 30 min.
+        </p>
+
+        <!-- Hero CTAs -->
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <a class="pulse-call flex items-center justify-center gap-2.5 bg-primary hover:bg-primary-hover text-white font-bold text-base px-7 py-4 rounded-xl shadow-lg transition-all active:scale-95 text-center" href="tel:+32466423280">
+            <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">call</span>
+            <span data-i18n="hero.call_btn">Bellen : 0466 42 32 80</span>
+          </a>
+
+          <a class="flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-base px-7 py-4 rounded-xl shadow-md transition-all active:scale-95 text-center" href="https://wa.me/32466423280" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-xl">chat</span>
+            <span data-i18n="hero.wa_btn">Direct WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14 mt-12">
+
+    <!-- SERVICES & RÉALISATIONS - Single Interactive Auto Carousel Card (All 6 Services with Correct Asset Pictures) -->
+    <section class="space-y-6" id="services">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+        <div>
+          <span class="text-xs font-bold text-primary tracking-widest uppercase" data-i18n="services.subtitle">Onze Interventies</span>
+          <h2 class="text-2xl sm:text-4xl font-headline font-black text-slate-900 tracking-tight" data-i18n="services.title">
+            Services & Réalisations
+          </h2>
+        </div>
+        
+        <!-- Controls: Manual Arrows & Dots -->
+        <div class="flex items-center gap-3">
+          <button aria-label="Vorige Dienst" class="w-10 h-10 rounded-full border border-slate-300 bg-white hover:bg-primary hover:text-white hover:border-primary flex items-center justify-center text-slate-700 shadow-xs transition-all active:scale-95" id="carousel-prev">
+            <span class="material-symbols-outlined text-xl">chevron_left</span>
+          </button>
+          
+          <div class="flex items-center gap-1.5" id="carousel-dots">
+            <!-- Dots dynamically populated by JS -->
+          </div>
+
+          <button aria-label="Volgende Dienst" class="w-10 h-10 rounded-full border border-slate-300 bg-white hover:bg-primary hover:text-white hover:border-primary flex items-center justify-center text-slate-700 shadow-xs transition-all active:scale-95" id="carousel-next">
+            <span class="material-symbols-outlined text-xl">chevron_right</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Single Featured Interactive Card Carousel (6 Slides) -->
+      <div class="relative bg-white rounded-3xl border border-slate-200 shadow-md overflow-hidden" id="services-carousel">
+        
+        <!-- Slide 1: Réparation de Fuite d'Eau -->
+        <div class="carousel-slide block transition-all duration-500">
+          <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+            <div class="lg:col-span-6 relative h-64 sm:h-96 overflow-hidden bg-slate-100 group">
+              <img alt="Réparation de Fuite d'Eau" class="w-full h-full object-cover zoom-img" src="assets/images/Réparation de Fuite d'Eau.png"/>
+              <div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-lg text-xs font-extrabold shadow-sm">
+                Urgence Fuite 24/7
+              </div>
+            </div>
+            <div class="lg:col-span-6 p-6 sm:p-10 space-y-4">
+              <div class="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider">
+                <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+                <span>Plomberie Express</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-headline font-black text-slate-900" data-i18n="service1.title">
+                Réparation de Fuite d'Eau
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="service1.desc">
+                Détection non-destructive et colmatage immédiat de fuites encastrées ou apparentes.
+              </p>
+              <ul class="space-y-2 text-xs font-semibold text-slate-700">
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Détection acoustique et caméra thermique</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Attestation technique pour votre assurance</span>
+                </li>
+              </ul>
+              <div class="pt-2">
+                <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold text-xs px-6 py-3 rounded-xl shadow-xs transition-all active:scale-95" href="plomberie.html">
+                  <span data-i18n="service1.cta">Dépannage Fuite</span>
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Installation & Entretien Chaudière -->
+        <div class="carousel-slide hidden transition-all duration-500">
+          <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+            <div class="lg:col-span-6 relative h-64 sm:h-96 overflow-hidden bg-slate-100 group">
+              <img alt="Installation & Entretien Chaudière" class="w-full h-full object-cover zoom-img" src="assets/images/Installation & Entretien Chaudière.png"/>
+              <div class="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-lg text-xs font-extrabold shadow-sm">
+                Agréé G1 / L
+              </div>
+            </div>
+            <div class="lg:col-span-6 p-6 sm:p-10 space-y-4">
+              <div class="flex items-center gap-2 text-amber-700 font-bold text-xs uppercase tracking-wider">
+                <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                <span>Chauffage & Chaudières</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-headline font-black text-slate-900" data-i18n="service2.title">
+                Installation & Entretien Chaudière
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="service2.desc">
+                Entretien légal certifié G1/L, attestation officielle et dépannage chaudière gaz & mazout.
+              </p>
+              <ul class="space-y-2 text-xs font-semibold text-slate-700">
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Attestation officielle de conformité légale</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Contrôle combustion et sécurité gaz / mazout</span>
+                </li>
+              </ul>
+              <div class="pt-2">
+                <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold text-xs px-6 py-3 rounded-xl shadow-xs transition-all active:scale-95" href="chauffage.html">
+                  <span data-i18n="service2.cta">Prendre RDV Chaudière</span>
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Réparation & Dépannage Chauffage -->
+        <div class="carousel-slide hidden transition-all duration-500">
+          <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+            <div class="lg:col-span-6 relative h-64 sm:h-96 overflow-hidden bg-slate-100 group">
+              <img alt="Réparation & Dépannage Chauffage" class="w-full h-full object-cover zoom-img" src="assets/images/instalation et reparer chofage.png"/>
+              <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-lg text-xs font-extrabold shadow-sm">
+                Chauffage Central
+              </div>
+            </div>
+            <div class="lg:col-span-6 p-6 sm:p-10 space-y-4">
+              <div class="flex items-center gap-2 text-blue-600 font-bold text-xs uppercase tracking-wider">
+                <span class="material-symbols-outlined text-xl">thermostat</span>
+                <span>Chauffage Central</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-headline font-black text-slate-900" data-i18n="service3.title">
+                Réparation & Dépannage Chauffage
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="service3.desc">
+                Remplacement de circulateur, purge des radiateurs et remise en route du système de chauffage.
+              </p>
+              <ul class="space-y-2 text-xs font-semibold text-slate-700">
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Diagnostic express de panne sous 15 min</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Purge et de-embouage des circuits de radiateurs</span>
+                </li>
+              </ul>
+              <div class="pt-2">
+                <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold text-xs px-6 py-3 rounded-xl shadow-xs transition-all active:scale-95" href="chauffage.html">
+                  <span data-i18n="service3.cta">Dépannage Chauffage</span>
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Travaux de Plomberie & Sanitaires -->
+        <div class="carousel-slide hidden transition-all duration-500">
+          <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+            <div class="lg:col-span-6 relative h-64 sm:h-96 overflow-hidden bg-slate-100 group">
+              <img alt="Travaux de Plomberie & Sanitaires" class="w-full h-full object-cover zoom-img" src="assets/images/traveux plambier.png"/>
+              <div class="absolute top-4 left-4 bg-teal-600 text-white px-3 py-1 rounded-lg text-xs font-extrabold shadow-sm">
+                Sanitaire & Rénovation
+              </div>
+            </div>
+            <div class="lg:col-span-6 p-6 sm:p-10 space-y-4">
+              <div class="flex items-center gap-2 text-teal-700 font-bold text-xs uppercase tracking-wider">
+                <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">plumbing</span>
+                <span>Rénovation Sanitaire</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-headline font-black text-slate-900" data-i18n="service4.title">
+                Travaux de Plomberie & Sanitaires
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="service4.desc">
+                Pose de robinetterie, tuyauterie cuivre/multicouche, boilers et sanitaires complets.
+              </p>
+              <ul class="space-y-2 text-xs font-semibold text-slate-700">
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Pose de WC Geberit, douches & boilers de marque</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Tuyauteries certified cuivre et multicouche pro</span>
+                </li>
+              </ul>
+              <div class="pt-2">
+                <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold text-xs px-6 py-3 rounded-xl shadow-xs transition-all active:scale-95" href="plomberie.html">
+                  <span data-i18n="service4.cta">Devis Plomberie</span>
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5: Débouchage Canalisations -->
+        <div class="carousel-slide hidden transition-all duration-500">
+          <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+            <div class="lg:col-span-6 relative h-64 sm:h-96 overflow-hidden bg-slate-100 group">
+              <img alt="Débouchage Canalisations" class="w-full h-full object-cover zoom-img" src="assets/images/Débouchage Canalisations.png"/>
+              <div class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-lg text-xs font-extrabold shadow-sm">
+                Hydrocurage Haute Pression
+              </div>
+            </div>
+            <div class="lg:col-span-6 p-6 sm:p-10 space-y-4">
+              <div class="flex items-center gap-2 text-purple-700 font-bold text-xs uppercase tracking-wider">
+                <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">build</span>
+                <span>Ontstopping / Débouchage</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-headline font-black text-slate-900" data-i18n="service5.title">
+                Débouchage Canalisations
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="service5.desc">
+                Débouchage hydrocurage haute pression et caméra pour WC, siphons et égouts.
+              </p>
+              <ul class="space-y-2 text-xs font-semibold text-slate-700">
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Inspection caméra vidéo HD pour localisation des bouchons</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Nettoyage hydrocurage sous pression immédiat</span>
+                </li>
+              </ul>
+              <div class="pt-2">
+                <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold text-xs px-6 py-3 rounded-xl shadow-xs transition-all active:scale-95" href="plomberie.html">
+                  <span data-i18n="service5.cta">Urgence Débouchage</span>
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6: Climatisation & Pompes à Chaleur -->
+        <div class="carousel-slide hidden transition-all duration-500">
+          <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+            <div class="lg:col-span-6 relative h-64 sm:h-96 overflow-hidden bg-slate-100 group">
+              <img alt="Climatisation & Pompes à Chaleur" class="w-full h-full object-cover zoom-img" src="assets/images/Climatisation & Pompes à Chaleursame.png"/>
+              <div class="absolute top-4 left-4 bg-cyan-600 text-white px-3 py-1 rounded-lg text-xs font-extrabold shadow-sm">
+                Inverter A+++
+              </div>
+            </div>
+            <div class="lg:col-span-6 p-6 sm:p-10 space-y-4">
+              <div class="flex items-center gap-2 text-cyan-700 font-bold text-xs uppercase tracking-wider">
+                <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">ac_unit</span>
+                <span>Airco & Pompes à Chaleur</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-headline font-black text-slate-900" data-i18n="service6.title">
+                Climatisation & Pompes à Chaleur
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="service6.desc">
+                Pose, entretien et recharge de fluide frigorigène pour systèmes Inverter réversibles.
+              </p>
+              <ul class="space-y-2 text-xs font-semibold text-slate-700">
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Bilan thermique sur-mesure gratuit</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span>
+                  <span>Recharge fluide frigorigène et nettoyage antibactérien</span>
+                </li>
+              </ul>
+              <div class="pt-2">
+                <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold text-xs px-6 py-3 rounded-xl shadow-xs transition-all active:scale-95" href="climatisation.html">
+                  <span data-i18n="service6.cta">Bilan Climatisation</span>
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: Devis Gratuit / Demandez Votre Rappel (Modern Glass & Select Controls) -->
+    <section class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-xs" id="devis">
+      <div class="max-w-xl mx-auto space-y-5">
+        <div class="text-center space-y-1">
+          <span class="text-xs font-bold text-primary uppercase tracking-wider" data-i18n="devis.tag">Gratis Offerte</span>
+          <h2 class="text-2xl sm:text-3xl font-headline font-black text-slate-900" data-i18n="devis.title">
+            Demandez Votre Rappel sous 5 Minutes
+          </h2>
+          <p class="text-xs text-slate-500" data-i18n="devis.subtitle">
+            Remplissez ce formulaire rapide ou contactez-nous directement sur WhatsApp.
+          </p>
+        </div>
+
+        <form class="space-y-4" id="quote-form">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            
+            <!-- Service Dropdown (Custom Styled Select) -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="devis.label_service" for="problem-type">Service demandé *</label>
+              <select class="custom-select-target w-full" id="problem-type" required="">
+                <option value="">Sélectionnez un service</option>
+                <option value="fuite">Réparation de Fuite d'Eau</option>
+                <option value="chaudiere">Installation & Entretien Chaudière</option>
+                <option value="chauffage">Réparation & Dépannage Chauffage</option>
+                <option value="plomberie">Travaux Plomberie & Sanitaires</option>
+                <option value="debouchage">Débouchage Canalisations</option>
+                <option value="climatisation">Climatisation & Pompes à Chaleur</option>
+              </select>
+            </div>
+
+            <!-- Belgian Postal Code Autocomplete -->
+            <div class="relative">
+              <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="devis.label_location" for="postal-code">Code Postal & Commune *</label>
+              <input autocomplete="off" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs text-slate-800 focus:border-primary focus:ring-2 focus:ring-primary/20 shadow-xs transition-all" id="postal-code" placeholder="Ex: 1000 Bruxelles, 1050 Ixelles, 2000 Antwerpen..." required="" type="text"/>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            
+            <!-- Phone Number with Country Code Dropdown & Strict Digit Filter -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="devis.label_phone" for="phone-number">Téléphone *</label>
+              <div class="phone-group">
+                <select class="phone-country-select custom-select-target" id="phone-country">
+                  <option value="+32" selected>BE +32</option>
+                  <option value="+33">FR +33</option>
+                  <option value="+31">NL +31</option>
+                  <option value="+49">DE +49</option>
+                  <option value="+352">LU +352</option>
+                </select>
+                <input class="flex-1 bg-slate-50 border border-slate-300 rounded-xl px-3 py-2.5 text-xs text-slate-800 focus:border-primary focus:ring-2 focus:ring-primary/20 shadow-xs transition-all" id="phone-number" placeholder="0466423280" required="" type="tel"/>
+              </div>
+            </div>
+
+            <!-- Client Name -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="devis.label_name" for="client-name">Nom</label>
+              <input class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs text-slate-800 focus:border-primary focus:ring-2 focus:ring-primary/20 shadow-xs transition-all" id="client-name" placeholder="Votre nom" type="text"/>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="devis.label_details" for="details">Précisions sur la panne</label>
+            <textarea class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs text-slate-800 focus:border-primary focus:ring-2 focus:ring-primary/20 shadow-xs transition-all" id="details" placeholder="Précisez votre situation..." rows="2"></textarea>
+          </div>
+
+          <div class="flex items-center gap-2 pt-1">
+            <input class="rounded text-primary focus:ring-primary h-4 w-4" id="urgency-flag" type="checkbox"/>
+            <label class="text-xs text-slate-700 cursor-pointer select-none" data-i18n="devis.urgency_text" for="urgency-flag">
+              Het betreft een dringende noodsituatie.
+            </label>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <button class="flex-1 bg-primary hover:bg-primary-hover text-white font-bold text-xs py-3.5 rounded-xl shadow-xs transition-all active:scale-98 flex items-center justify-center gap-2" type="submit">
+              <span class="material-symbols-outlined text-base">send</span>
+              <span data-i18n="devis.submit_btn">Aanvraag verzenden</span>
+            </button>
+            
+            <button class="bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-xs px-6 py-3.5 rounded-xl shadow-xs transition-all active:scale-98 flex items-center justify-center gap-2" id="send-wa-direct" type="button">
+              <span class="material-symbols-outlined text-base">chat</span>
+              <span data-i18n="devis.wa_direct_btn">WhatsApp Direct</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECTION: Client Testimonials -->
+    <section class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold text-primary tracking-widest uppercase">Avis Clients</span>
+          <h2 class="text-xl sm:text-2xl font-headline font-black text-slate-900">Confiance & Satisfaction</h2>
+        </div>
+        
+        <!-- Rating Badge -->
+        <div class="inline-flex items-center gap-1.5 bg-white px-3.5 py-1.5 rounded-full border border-slate-200 text-xs font-bold w-max shadow-xs">
+          <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="text-slate-900">4.9 / 5</span>
+          <span class="text-slate-400 font-normal text-[11px]">(+480 avis)</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 space-y-3 shadow-xs">
+          <p class="text-xs text-slate-700 italic leading-relaxed">"Plombier arrivé en 25 minutes un dimanche soir à Uccle. Travail propre, fuite réparée et tarif clair."</p>
+          <div class="text-xs font-bold text-slate-900 border-t border-slate-100 pt-2">Marc D. • Uccle</div>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 space-y-3 shadow-xs">
+          <p class="text-xs text-slate-700 italic leading-relaxed">"Entretien annuel de chaudière impeccable à Waterloo. Attestation officielle délivrée tout de suite."</p>
+          <div class="text-xs font-bold text-slate-900 border-t border-slate-100 pt-2">Sophie L. • Waterloo</div>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 space-y-3 shadow-xs">
+          <p class="text-xs text-slate-700 italic leading-relaxed">"Zeer snelle interventie in Vilvoorde voor verstopte afvoer. Vriendelijke service en eerlijke prijs."</p>
+          <div class="text-xs font-bold text-slate-900 border-t border-slate-100 pt-2">Jan V. • Vilvoorde</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer with Developer Link -->
+    <footer class="pt-8 pb-10 border-t border-slate-200 text-slate-600 space-y-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <img alt="PLOMB EXPERT Logo" class="h-9 w-auto object-contain rounded-md border border-slate-200 shadow-xs" src="assets/images/logo.jpg"/>
+          <div>
+            <span class="text-xl font-headline font-black text-primary">PLOMB EXPERT</span>
+            <p class="text-[11px] font-semibold text-slate-500 -mt-0.5">Comfort & Expertise</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-semibold text-slate-700">
+          <a class="text-primary hover:underline font-bold" href="tel:+32466423280">+32 466 42 32 80</a>
+          <span class="text-slate-300">•</span>
+          <a class="text-[#25D366] hover:underline font-bold" href="https://wa.me/32466423280" target="_blank">WhatsApp</a>
+          <span class="text-slate-300">•</span>
+          <a class="text-blue-600 hover:underline font-bold" href="https://www.facebook.com/profile.php?id=61594108021201" target="_blank">Facebook</a>
+          <span class="text-slate-300">•</span>
+          <span class="text-slate-600">Disponibilité 24/7</span>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+        <p>© 2026 PLOMB EXPERT Belgique. Tous droits réservés.</p>
+        <div class="flex items-center gap-3">
+          <span>Développé par <a class="text-primary font-bold hover:underline" href="https://aziz-tounsi.github.io/" rel="noopener noreferrer" target="_blank">Aziz Tounsi</a></span>
+          <span>•</span>
+          <a class="hover:text-primary transition-colors" href="mailto:plombexpertbelgica@gmail.com">plombexpertbelgica@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Desktop Floating Action Bar -->
+  <div class="hidden md:flex fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900/90 backdrop-blur-xl border border-white/20 rounded-full px-6 py-2.5 shadow-xl items-center gap-4 text-white opacity-0 translate-y-10 transition-all duration-300" id="floating-island">
+    <div class="flex items-center gap-2">
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="text-xs font-bold text-blue-200 uppercase">Technicien en Ligne</span>
+    </div>
+    <div class="h-4 w-px bg-slate-700"></div>
+    <a class="flex items-center gap-1.5 bg-primary hover:bg-primary-hover px-4 py-1.5 rounded-full text-xs font-bold text-white transition-all shadow-xs" href="tel:+32466423280">
+      <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">call</span>
+      <span>+32 466 42 32 80</span>
+    </a>
+    <a class="flex items-center gap-1.5 bg-[#25D366] hover:bg-[#20ba5a] px-3.5 py-1.5 rounded-full text-xs font-bold text-white transition-all" href="https://wa.me/32466423280" rel="noopener noreferrer" target="_blank">
+      <span class="material-symbols-outlined text-sm">chat</span>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
