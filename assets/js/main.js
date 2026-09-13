@@ -1035,6 +1035,23 @@ function showSuccessModal(data) {
   if (existing) existing.remove();
 
   const isNl = currentLang === 'nl';
+  
+  // Resolve translated service label name
+  const optionKeys = {
+    "fuite": "devis.opt_fuite",
+    "chaudiere": "devis.opt_chaudiere",
+    "chauffage": "devis.opt_chauffage",
+    "plomberie": "devis.opt_plomberie",
+    "debouchage": "devis.opt_debouchage",
+    "climatisation": "devis.opt_climatisation",
+    "dishwasher": "devis.opt_dishwasher",
+    "washer": "devis.opt_washer"
+  };
+  const serviceKey = optionKeys[data.problem];
+  const serviceLabel = (serviceKey && translations[currentLang][serviceKey]) 
+    ? translations[currentLang][serviceKey] 
+    : data.problem;
+
   const modalHtml = `
     <div id="custom-success-modal" class="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md transition-opacity duration-300 opacity-0">
       <div class="relative w-full max-w-md bg-white/95 backdrop-blur-xl border border-white/40 rounded-3xl p-6 sm:p-8 shadow-2xl transform scale-95 transition-all duration-300">
@@ -1052,10 +1069,10 @@ function showSuccessModal(data) {
 
         <div class="text-center mb-6">
           <h3 class="text-xl font-extrabold text-slate-900 tracking-tight">
-            ${isNl ? 'Aanvraag Ontvangen!' : 'Demande Recue !'}
+            ${isNl ? 'Aanvraag Ontvangen!' : 'Demande Reçue !'}
           </h3>
           <p class="text-xs font-semibold text-emerald-600 mt-1 uppercase tracking-wider">
-            ${isNl ? 'Rechtstreeks verzonden naar ons emailadres' : 'Envoyé directement à notre email'}
+            ${isNl ? 'Rechtstreeks verzonden naar ons e-mailadres' : 'Envoyée directement à notre email'}
           </p>
           <p class="text-xs text-slate-600 mt-2 leading-relaxed">
             ${isNl 
@@ -1065,14 +1082,18 @@ function showSuccessModal(data) {
         </div>
 
         <!-- Summary Pill -->
-        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-3.5 mb-6 text-left space-y-1.5 text-xs text-slate-600">
+        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-3.5 mb-6 text-left space-y-2 text-xs text-slate-600">
           <div class="flex justify-between items-center">
-            <span class="text-slate-400 font-medium">${isNl ? 'Bestemming Email:' : 'Email Destinataire:'}</span>
-            <span class="font-semibold text-slate-800">plombexpertbelgica@gmail.com</span>
+            <span class="text-slate-400 font-medium">${isNl ? 'Dienst:' : 'Service :'}</span>
+            <span class="font-semibold text-slate-800 text-right">${serviceLabel}</span>
           </div>
           <div class="flex justify-between items-center">
-            <span class="text-slate-400 font-medium">${isNl ? 'Locatie:' : 'Commune:'}</span>
+            <span class="text-slate-400 font-medium">${isNl ? 'Locatie:' : 'Commune :'}</span>
             <span class="font-semibold text-slate-800">${data.location}</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="text-slate-400 font-medium">${isNl ? 'Bestemming:' : 'Destinataire :'}</span>
+            <span class="font-semibold text-slate-800">plombexpertbelgica@gmail.com</span>
           </div>
         </div>
 
